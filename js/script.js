@@ -23,13 +23,19 @@ for (var k in studentPart1) {
 
 var studentElement2 = document.getElementById("part-2");
 
-var studentPart2 = {
-    name: ["Antonio", "Andrea", "Gianni", "Roberto", "Luca"],
-    surname: ["Venezia", "Ditaranto", "Sulla", "Armandi", "Appio"],
-}
+var studentPart2 = [
+    {
+        name: "Antonio",
+        surname: "Venezia"
+    },
+    {
+        name: "Gianluca",
+        surname: "Guadagno"
+    }]
+
 
 for (var x = 0; x < studentPart2.length; x++) {
-    
+    console.log("Lo studente si chiama: ", studentPart2[x].name, studentPart2[x].surname);
 }
 
 
@@ -38,20 +44,15 @@ for (var x = 0; x < studentPart2.length; x++) {
 //Dare la possibilità all’utente, attraverso 3 prompt() - uno per ciascuna proprietà - di 
 //aggiungere UN SOLO oggetto studente inserendo nell’ordine: nome, cognome e età.
 
-var classPart3 = {
-    studentsPart3: []
-}
+var studentPart3 = {}
 
-while (classPart3.studentsPart3.length < 1) {
-    var studentName3 = prompt("Inserisci il nome dello studente");
-    var studentSurname3 = prompt("Inserisci il cognome dello studente");
-    var studentAge3 = prompt("Inserisci l'età dello studente");
-    
-    classPart3.studentsPart3.push({
-        name3: studentName3,
-        surname3: studentSurname3,
-        age3: studentAge3,
-    });
-}
+var studentName3 = prompt("Inserisci il nome dello studente");
+var studentSurname3 = prompt("Inserisci il cognome dello studente");
+var studentAge3 = prompt("Inserisci l'età dello studente");
 
-console.log(classPart3);
+studentPart3.name = studentName3;
+studentPart3.surname = studentSurname3;
+studentPart3.age = studentAge3;
+
+
+console.log(studentPart3);

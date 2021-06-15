@@ -35,7 +35,7 @@ var studentPart2 = [
 
 
 for (var x = 0; x < studentPart2.length; x++) {
-    console.log("Lo studente si chiama: ", studentPart2[x].name, studentPart2[x].surname);
+    studentElement2.innerHTML += "Lo studente si chiama: " + studentPart2[x].name + " " + studentPart2[x].surname +  " " + "<br>";
 }
 
 
@@ -43,6 +43,8 @@ for (var x = 0; x < studentPart2.length; x++) {
 
 //Dare la possibilità all’utente, attraverso 3 prompt() - uno per ciascuna proprietà - di 
 //aggiungere UN SOLO oggetto studente inserendo nell’ordine: nome, cognome e età.
+
+var studentElement3 = document.getElementById("part-3");
 
 var studentPart3 = {}
 
@@ -55,4 +57,4 @@ studentPart3.surname = studentSurname3;
 studentPart3.age = studentAge3;
 
 
-console.log(studentPart3);
+studentElement2.innerHTML += "<br>" + studentPart3.name + ", " + studentPart3.surname + ", " + studentPart3.age;
